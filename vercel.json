@@ -1,6 +1,15 @@
 {
   "version": 2,
   "functions": {
-    "api/proxy.js": { "maxDuration": 30 }
-  }
+    "api/proxy.js":   { "maxDuration": 30 },
+    "api/process.js": { "maxDuration": 30 },
+    "api/result.js":  { "maxDuration": 10 },
+    "api/cron.js":    { "maxDuration": 30 }
+  },
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "* * * * *"
+    }
+  ]
 }
